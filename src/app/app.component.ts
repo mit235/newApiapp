@@ -12,7 +12,7 @@ export class AppComponent {
   nursers:any;
   constructor(private userData:UsersDataService){
     userData.users().subscribe((data)=>{
-      // console.log("data",data);
+      console.log("data",data);
       this.users=data.users;
       console.log(this.users)
     });
